@@ -8,7 +8,7 @@
 #define BITCOIN_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/polis-config.h"
+#include "config/mnpcoin-config.h"
 #endif
 
 #include "amount.h"
