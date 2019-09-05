@@ -1,41 +1,40 @@
-![Polis](https://github.com/polispay/polis/raw/master/src/qt/res/icons/bitcoin.png "Polis")
+![Polis](https://github.com/MasterNodesPro/MNPCoin-PolisCore/raw/master/src/qt/res/icons/bitcoin.png "Polis")
 
-POLIS Core integration/staging tree
+MNPCoin Core integration/staging tree
 =====================================
-[![Build Status](https://travis-ci.org/polispay/polis.svg?branch=master)](https://travis-ci.org/polispay/polis)
 
-
-http://www.polispay.org
+http://www.mnpcoin.pro
 
 - Copyright (c) 2009-2015 Bitcoin Developers
 - Copyright (c) 2014-2017 Dash Developers
-- Copyright (c) 2017-2018 Polis Developers
+- Copyright (c) 2017-2019 Polis Developers
+- Copyright (c) 2017-2019 MNPCoin Developers
 
-What is Polis?
+What is MNPCoin?
 ----------------
 
-Polis is an experimental digital currency that enables anonymous, instant
-payments to anyone, anywhere in the world. Polis uses peer-to-peer technology
+MNPCoin is an experimental digital currency that enables anonymous, instant
+payments to anyone, anywhere in the world. MNPCoin uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. Polis Core is the name of the open
+are carried out collectively by the network. MNPCoin Core is the name of the open
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Polis Core software, see https://www.polispay.org/Find-polis/.
+the MNPCoin Core software, see https://mnpcoin.pro/.
 
 
 License
 -------
 
-Polis Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+MNPCoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/polispay/polis/tags) are created to indicate new official,
-stable release versions of Polis Core.
+[Tags](https://github.com/MasterNodesPro/MNPCoin-PolisCore/tags) are created to indicate new official,
+stable release versions of MNPCoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
