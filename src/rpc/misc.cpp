@@ -526,7 +526,7 @@ UniValue verifymessage(const JSONRPCRequest& request)
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Malformed base64 encoding");
 
     CHashWriter ss(SER_GETHASH, 0);
-    ss << strMessageMagic;
+    ss << ReturnMessageSigningMagic(GetTime());
     ss << strMessage;
 
     CPubKey pubkey;
@@ -568,7 +568,7 @@ UniValue signmessagewithprivkey(const JSONRPCRequest& request)
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Private key outside allowed range");
 
     CHashWriter ss(SER_GETHASH, 0);
-    ss << strMessageMagic;
+    ss << ReturnMessageSigningMagic(GetTime());
     ss << strMessage;
 
     std::vector<unsigned char> vchSig;
@@ -1193,7 +1193,7 @@ static const CRPCCommand commands[] =
     /* Not shown in help */
     { "hidden",             "setmocktime",            &setmocktime,            true,  {"timestamp"}},
     { "hidden",             "echo",                   &echo,                   true,  {"arg0","arg1","arg2","arg3","arg4","arg5","arg6","arg7","arg8","arg9"}},
-    { "hidden",             "echojson",               &echo,                  true,  {"arg0","arg1","arg2","arg3","arg4","arg5","arg6","arg7","arg8","arg9"}},
+    { "hidden",             "echojson",               &echo,                   true,  {"arg0","arg1","arg2","arg3","arg4","arg5","arg6","arg7","arg8","arg9"}},
 };
 
 void RegisterMiscRPCCommands(CRPCTable &t)

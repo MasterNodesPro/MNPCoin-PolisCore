@@ -163,7 +163,7 @@ void SignVerifyMessageDialog::on_signMessageButton_SM_clicked()
     }
 
     CHashWriter ss(SER_GETHASH, 0);
-    ss << strMessageMagic;
+    ss << ReturnMessageSigningMagic(GetTime());
     ss << ui->messageIn_SM->document()->toPlainText().toStdString();
 
     std::vector<unsigned char> vchSig;
@@ -238,7 +238,7 @@ void SignVerifyMessageDialog::on_verifyMessageButton_VM_clicked()
     }
 
     CHashWriter ss(SER_GETHASH, 0);
-    ss << strMessageMagic;
+    ss << ReturnMessageSigningMagic(GetTime());
     ss << ui->messageIn_VM->document()->toPlainText().toStdString();
 
     CPubKey pubkey;

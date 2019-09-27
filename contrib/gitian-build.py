@@ -27,7 +27,7 @@ def setup():
     if not os.path.isdir('polis-detached-sigs'):
         subprocess.check_call(['git', 'clone', 'https://github.com/polispay/polis-detached-sigs.git'])
     if not os.path.isdir('gitian-builder'):
-        subprocess.check_call(['git', 'clone', 'https://github.com/devrandom/gitian-builder.git'])
+        subprocess.check_call(['git', 'clone', 'https://github.com/eabz/gitian-builder.git'])
     if not os.path.isdir('polis'):
         subprocess.check_call(['git', 'clone', 'https://github.com/polispay/polis.git'])
     os.chdir('gitian-builder')
